@@ -258,25 +258,55 @@ nav {
 /* services */
 
 #services {
-    padding-left: 460px;
+    padding: 50px 0;
+    /* background-color: #1D5047; */
+    text-align: center;
 }
 
 #services h2 {
+    color: #ffffff;
+    margin-bottom: 50px;
+    /* font-size: 2.5rem; */
     text-align: right;
-    margin-right: 350px;
+    margin-right: 360px;
     margin-top: 30px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .service-item {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 18px 5px;
-    margin: 20px 20px;
-    width: 15%;
-    box-sizing: border-box;
+    padding: 20px;
+    width: 250px;
     text-align: center;
     border-radius: 20px;
     color: #1D5047;
     background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service-item h4 {
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 @media (min-width: 1200px) {
@@ -288,8 +318,8 @@ nav {
 
 @media (max-width: 768px) {
     .service-item {
-        width: calc(50% - 40px);
-        margin: 20px 10px;
+        width: calc(40% - 40px);
+        margin: 10px 10px;
         display: inline-block;
     }
     #services {
@@ -340,6 +370,7 @@ nav {
 
 .carousel {
     display: flex;
+    justify-content: center;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -368,9 +399,8 @@ nav {
         width: 100%;
     }
     #clients h2 {
-        text-align: left;
+        text-align: center;
         color: #1D5047;
-        margin-left: 40px;
         margin-bottom: 50px;
     }
 }
@@ -578,7 +608,7 @@ nav {
     max-width: 700px;
     color: #ffffff;
     margin: 0 auto;
-  
+    /* Center the section horizontally */
 }
 
 #about-us h2 {
@@ -602,7 +632,7 @@ nav {
     #about-us {
         max-width: 400px;
         margin: 0 auto;
-      
+        /* Center the section horizontally */
     }
     .about {
         padding: 10px;
@@ -614,13 +644,13 @@ nav {
     max-width: 700px;
     color: #ffffff;
     margin: 0 auto;
-  
+    /* Center the section horizontally */
 }
 
 #about-us h2 {
     text-align: right;
     margin-right: 20px;
-   
+    /* Add some space from the right edge */
 }
 
 .about {
@@ -644,24 +674,10 @@ nav {
     #about-us {
         max-width: 400px;
         margin: 0 auto;
-       
+        /* Center the section horizontally */
     }
     .about {
         padding: 10px;
         text-align: center;
     }
 }
-
- @media (max-width: 600px) {
-            .nama {
-                order: 1;
-                width: 100%;
-            }
-            .copyright {
-                order: 2;
-                width: 100%;
-            }
-            footer {
-                margin-bottom: 40px;
-            }
-        }
